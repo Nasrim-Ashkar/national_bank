@@ -1,0 +1,15 @@
+<h2>{{data}}</h2>
+<div class="container w-50   p-3 rounded border text-center " style="background-color: rgba(92, 113, 131, 0.703);">
+    <h1 class="text-center">Login</h1>
+    <form action="">
+      <div class="p-3 mt-2">
+        <input (change)="acnoChange($event)" type="text" class="form-control" id="ac1" name="acno" [placeholder]="inputplaceholder">
+      </div>
+      <div class="p-3 mt-2">
+        <input (change)="pswrdChange($event)" type="password" class="form-control" id="psw1" name="paswrd1"  placeholder="Enter Password">
+      </div>
+      <div class="p-3 mt-2">
+        <button (click)="login()" type="button" class="btn btn-light">Submit</button>
+      </div>
+    </form>
+  </div>
